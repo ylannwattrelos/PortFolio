@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
+  <title>
+    Ylann Wattrelos | Etudiant en BUT Informatique.
+  </title>
+
+  <meta name="description" content="Add small description of yourslef.">
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <header class="header" role="banniere" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#projet" class="nav__lien">Projets</a></li>
+          <li class="nav__item">
+            <a href="#apropos" class="nav__lien">A propos</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__lien">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <span>Ylann Wattrelos</span>
+        </h1>
+        <p>Développeur basé à Lille, France</p>
+        <a href="#contact" class="btn btn--pink">Me contacter</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** Projet ***** -->
+
+    <section class="projet" id="projet">
+      <div class="row">
+        <h2>Mes Projets</h2>
+        <div class="projet__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="projet__box">
+            <div class="projet__text">
+              <h3>Portfolio</h3>
+              <p>
+                Mon portfolio, le site sur lequel vous êtes actuellement.
+              </p>
+              <ul class="projet__list">
+                <li>HTML</li>
+                <li>SCSS</li>
+                <li>JavaScript</li>
+              </ul>
+
+              <div class="projet__liens">
+                <a href="https://nisar.surge.sh" target="_blank" class="lien__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="projet__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="projet__image-box">
+              <img src="./images/project-1.png" class="projet__image" alt="Project 1" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Apropos ***** -->
+
+    <section class="apropos" id="apropos">
+      <div class="row">
+        <h2>A propos de moi</h2>
+        <div class="apropos__content">
+          <div class="apropos__text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id
+              nostrum illo harum blanditiis, tenetur eum suscipit cupiditate
+              in vel, ex quam quidem quos mollitia labore aut sunt eius
+              ratione molestiae fuga veniam facere similique voluptate.
+            </p>
+          </div>
+
+          <div class="apropos__photo-container">
+            <img class="apropos__photo" src="./images/ylannwattrelos.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Me contacter</h2>
+      <div class="contact__info">
+        <p>
+          Actuellement <b>étudiant en informatique</b> et passionné par *le développement web* et *le develeppement java*, je suis constamment à la recherche de nouveaux défis techniques.
+          <br><br>
+          Je suis disponible pour discuter d'opportunités de <b>stage</b>, de <b>projets collaboratifs</b>, ou pour échanger sur mes réalisations. Que vous ayez un conseil à me donner ou une proposition concrète, n'hésitez pas à m'envoyer un e-mail. Je réponds rapidement !
+        </p>
+        <!-- Replace the email with yours -->
+        <a href="mailto:ylannwattrelos060@gmail.com" class="btn">ylannwattrelos060@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__reseau-liens">
+        <li class="footer__reseau-lien-item">
+          <a href="https://github.com/ylannwattrelos/" title="Lien vers Profile Github">
+            <img src="./images/github.svg" class="footer__reseau-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__reseau-lien-item">
+          <a href="https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__reseau-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <a href="#top" class="retour-en-haut" title="retour en haut">
+    <img src="./images/arrow-up.svg" alt="retour en haut" class="retour-en-haut__image"/>
+  </a>
+  <script src="./index.js"></script>
+</body>
+
+</html>
