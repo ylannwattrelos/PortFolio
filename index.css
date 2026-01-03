@@ -509,7 +509,7 @@ body:not(.user-is-tabbing) a:focus {
     overflow: hidden;
 }
 
-.carousel-viewport {
+.carousel-projet {
     display: flex;
     overflow: hidden;
     width: 100%;
@@ -635,6 +635,42 @@ body:not(.user-is-tabbing) a:focus {
 
 .modal-link:hover {
     border-bottom: 1px solid var(--pink);
+}
+
+/* --------------------------------------- */
+/* ----- competences ----- */
+/* --------------------------------------- */
+
+.carousel-competences {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 100%;
+    gap: 2rem;
+}
+
+.competences__box.auto-scroll{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-shrink: 0;
+    will-change: transform;
+    animation: scrolling-inverse 20s linear infinite;
+}
+
+@keyframes scrolling-inverse {
+    0% {
+      transform: translateX(calc(-100% - 2rem));
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+.competences__image{
+    width: 120px;
+    height: auto;
+    object-fit: contain;
 }
 
 /* --------------------------------------- */
