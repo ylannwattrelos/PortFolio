@@ -674,6 +674,62 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 /* --------------------------------------- */
+/* ----- Parcours Scolaire ----- */
+/* --------------------------------------- */
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 4rem auto;
+    padding-left: 3rem;
+    border-left: 2px solid var(--pink);
+}
+
+.timeline__item {
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.timeline__item::before {
+    content: "";
+    position: absolute;
+    left: calc(-3rem - 6px);
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background-color: var(--pink);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--pink);
+}
+
+.timeline__date {
+    font-weight: bold;
+    color: var(--pink);
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.timeline__content {
+    background: var(--grey-dark);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.timeline__content:hover {
+    transform: translateX(10px);
+    border-color: var(--pink);
+}
+
+.timeline__school {
+    font-style: italic;
+    color: var(--white);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+/* --------------------------------------- */
 /* ----- Contact ----- */
 /* --------------------------------------- */
 
